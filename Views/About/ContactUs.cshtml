@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "About Page";
+}
+@model GuestMessage
+<div class="text-center row">
+    <h1 class="display-4">Send me message</h1>
+    <p>Mne plevat</p>
+
+    <div class="col-md-6">
+        <form method="post" asp-controller="About" asp-action="GetGuestMessage">
+                <legend>Disabled fieldset example</legend>
+
+                <div class="mb-3">
+                    <label for="ExampleInputEmail" class="form-label">Email</label>
+                    <input type="text" id="ExampleInputEmail" class="form-control" name="Email" asp-for="Email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="ExampleInputFIO" class="form-label">Fio</label>
+                    <input type="text" id="ExampleInputFIO" class="form-control" name="Fio" asp-for="Fio">
+                </div>
+
+                <div class="mb-3">
+                    <label for="ExampleInputPhone" class="form-label">Phone</label>
+                    <input type="text" id="ExampleInputPhone" class="form-control" name="Phone" asp-for="Phone">
+                </div>
+                <div class="mb-3">
+                    <label for="ExampleInputSubject" class="form-label">Subject</label>
+                    <input type="text" id="ExampleInputSubject" class="form-control" name="Subject" asp-for="Subject">
+                </div>
+                <div class="mb-3">
+                    <label for="ExampleInputMessage" class="form-label">Message</label>
+                    <textarea type="text" id="ExampleInputMessage" class="form-control" name="Message" asp-for="Message"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

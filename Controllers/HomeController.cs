@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using WebASPApplication1.Models;
+using WebASPApplication1.ViewModels;
 
 namespace WebASPApplication1.Controllers
 {
@@ -18,10 +18,7 @@ namespace WebASPApplication1.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

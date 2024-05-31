@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "About Page";
+}
+@model GuestMessage
+
+<div class="text-center">
+
+    <h1 class="display-4">Error request message</h1>
+    <p>@Model.Fio, you some data not valid</p>
+    <p asp-validation-summary="All"></p>
+</div>

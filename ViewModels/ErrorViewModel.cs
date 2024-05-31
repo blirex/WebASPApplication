@@ -1,4 +1,4 @@
-namespace WebASPApplication1.Models
+namespace WebASPApplication1.ViewModels
 {
     public class ErrorViewModel
     {
